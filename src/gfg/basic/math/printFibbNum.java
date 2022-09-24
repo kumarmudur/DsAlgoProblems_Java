@@ -1,9 +1,12 @@
 package gfg.basic.math;
 
+// Topic: Math
+
 import java.util.Arrays;
 
 public class printFibbNum {
 
+    // time: O(N) | space: O(N)
     static long[] printFibbNum(int n) {
         long fn = 1;
         long sn = 1;
