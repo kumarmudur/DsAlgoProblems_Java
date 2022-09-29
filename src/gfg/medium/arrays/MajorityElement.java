@@ -11,11 +11,8 @@ public class MajorityElement {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < size; i++) {
-            if (map.containsKey(arr[i])) {
-               map.put(arr[i], map.get(arr[i]) + 1);
-            } else {
-                map.put(arr[i], 1);
-            }
+            if (map.containsKey(arr[i])) map.put(arr[i], map.get(arr[i]) + 1);
+            else map.put(arr[i], 1);
             if (map.get(arr[i]) > size / 2) result = arr[i];
         }
         return result;
