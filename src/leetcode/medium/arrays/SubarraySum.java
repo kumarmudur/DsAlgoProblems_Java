@@ -15,7 +15,10 @@ public class SubarraySum {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
 
-            if (map.containsKey(sum - k)) count += map.get(sum - k);
+            if (map.containsKey(sum - k)) {
+                System.out.println();
+                count += map.get(sum - k);
+            }
             map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
         return count;
