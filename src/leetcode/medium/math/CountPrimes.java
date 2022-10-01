@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CountPrimes {
 
-    // time: O(N) | space: O(N)
+    // time: O(N * log(log(N) | space: O(N)
     static int countPrimes(int n) {
         if ( n < 2) return 0;
         boolean[] primes = new boolean[n];
