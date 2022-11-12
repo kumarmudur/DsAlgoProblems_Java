@@ -1,5 +1,10 @@
 package leetcode.easy.arrays;
 
+// Topic: Array, Hash Set
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class ArithmeticTriplets {
 
     // time: O(N^3) | space: O(1)
@@ -12,6 +17,18 @@ public class ArithmeticTriplets {
                     if (arr[j] - arr[i] == diff && arr[k] - arr[j] == diff) count++;
                 }
             }
+        }
+        return count;
+    }
+
+    // time: O(N) | space: O(N)
+    static int arithmeticTriplets1(int[] arr, int diff) {
+        int count = 0;
+        Set<Integer> set = new HashSet<>();
+
+        for (int num: arr) {
+            if (set.contains(num - diff) && set.contains(num - diff * 2)) count++;
+            set.add(num);
         }
         return count;
     }
