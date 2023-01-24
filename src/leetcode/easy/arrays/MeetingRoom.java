@@ -1,5 +1,7 @@
 package leetcode.easy.arrays;
 
+// Solution 1
+// time: O(n^2) | space O(1)
 public class MeetingRoom {
 
     public boolean canAttendMeetings(int[][] intervals) {
