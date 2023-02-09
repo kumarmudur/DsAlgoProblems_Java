@@ -7,7 +7,7 @@ public class Reader4 {
      * @param n   Number of characters to read
      * @return    The number of actual characters read
      */
-    // time: O(N) | space: O(N)
+    // time: O(N) | space: O(1)
     public int read(char[] buf, int n) {
         int copiedChars = 0, readChars = 4;
         char[] buf4 = new char[4];
