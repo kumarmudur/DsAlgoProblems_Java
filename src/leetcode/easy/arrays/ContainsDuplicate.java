@@ -9,7 +9,7 @@ public class ContainsDuplicate {
 
     // time: O(N) | space: O(N)
     static boolean containsDuplicate(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map = new HashMap<>();
         int length = nums.length;
         for (int i = 0; i < length; i++) {
             if (map.containsKey(nums[i])) {
