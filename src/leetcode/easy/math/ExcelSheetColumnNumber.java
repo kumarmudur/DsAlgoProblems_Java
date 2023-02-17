@@ -24,7 +24,7 @@ public class ExcelSheetColumnNumber {
     }
 
     // Solution 2
-    public static int titleNumber1(String columnTitle) {
+    public static int titleToNumber1(String columnTitle) {
         int result = 0;
         int n = columnTitle.length();
         for (int i = 0; i < n; i++) {
@@ -35,6 +35,6 @@ public class ExcelSheetColumnNumber {
     }
 
     public static void main(String[] args) {
-        System.out.println(titleToNumber("A"));
+        System.out.println(titleToNumber1("A"));
     }
 }
