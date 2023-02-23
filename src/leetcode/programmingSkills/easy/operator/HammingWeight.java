@@ -13,4 +13,15 @@ public class HammingWeight {
         }
         return bits;
     }
+
+    // Solution 2
+    // time: O(1) | Space: O(1)
+    public int hammingWeight1(int n) {
+        int sum = 0;
+        while (n != 0) {
+            sum++;
+            n &= (n - 1);
+        }
+        return sum;
+    }
 }
