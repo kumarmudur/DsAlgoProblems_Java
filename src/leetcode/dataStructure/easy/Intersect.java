@@ -10,10 +10,12 @@ public class Intersect {
         if (nums1.length > nums2.length) {
             return intersect(nums2, nums1);
         }
+
         HashMap<Integer, Integer> m = new HashMap<>();
         for (int n: nums1) {
             m.put(n, m.getOrDefault(n, 0) + 1);
         }
+
         int k = 0;
         for (int n: nums2) {
             int count = m.getOrDefault(n, 0);
